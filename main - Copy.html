@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: #004225;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .search-bar {
+            padding: 8px;
+            width: 200px;
+        }
+        .nav-icons a{
+            display: inline-block;
+            justify-content: space-between;
+            margin-right: 35px;
+            cursor: pointer;
+        }
+        .hero {
+            text-align: left;
+            padding: 50px;
+            background-color: #f8fc08;
+        }
+
+        .products {
+            padding: 20px;
+        }
+        .product-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .product-card {
+            background: white;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 5px;
+            text-align: center;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+        }
+        .product-card img {
+            width: 350px;
+            height: 320px;
+            object-fit: cover;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #004225;
+            color: white;
+        }
+        footer input {
+            padding: 8px;
+        }
+        footer button {
+            padding: 8px 15px;
+            background-color: #ffcc00;
+            border: none;
+            cursor: pointer;
+        }
+        .hero img{
+            position: absolute;
+            background-color: #ffcc00;
+    right: 50px; /* Adjust as needed */
+    top: 50%; /* Adjust for vertical alignment */
+    transform: translateY(-155%);
+    max-width: 100px; /* Adjust image size */
+            
+        }
+        
+     
+
+.hero-image {
+    align-content: left;
+            width: 50px;
+            height: 50px; 
+}
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            
+            <div class="nav-icons">
+                <a href="" style="color: white;">Home</a>
+                <a href="profile.html" style="color: white;">Profile</a>
+                <a href="about.html" style="color: white;">About Us</a>
+            </div>
+        </nav>
+    </header>
+    <section class="hero">
+        <h1>Special Product</h1>
+        <p>Discover our exclusive collection of premium T-shirts, designed for style and comfort.</p>
+        <button>Shop Now</button>
+        <img src="girl.jpg" class="heroimg">
+    </section>
+    <section class="products">
+        <h2>Category 1</h2>
+        <div class="product-list">
+            <div class="product-card"> <img src="img1.jpg"><p>Polo T-Shirt - $230</p></div>
+            <div class="product-card"> <img src="img2.jpg"><p>Polo T-Shirt - $230</p></div>
+            <div class="product-card"> <img src="img3.jpg"><p>Polo T-Shirt - $150</p></div>
+        </div>
+        <h2>Category 2</h2>
+        <div class="product-list">
+            <div class="product-card"> <img src="img4.jpg"><p>Polo T-Shirt - $80</p></div>
+            <div class="product-card"> <img src="img5.jpg"><p>Polo T-Shirt - $23</p></div>
+            <div class="product-card"> <img src="img6.jpg"><p>Polo T-Shirt - $220</p></div>
+        </div>
+    </section>
+    <footer>
+        <p>Subscribe to our newsletter</p>
+        <input type="email" placeholder="Enter your email">
+        <button onclick="subscribeNewsletter()">Subscribe</button>
+    </footer>
+    <script>
+        function subscribeNewsletter() {
+            let email = document.querySelector('footer input').value;
+            if (email) {
+                alert('Subscribed with ' + email);
+            } else {
+                alert('Please enter a valid email.');
+            }
+        }
+    </script>
+</body>
+</html>
+
+

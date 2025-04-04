@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us - Tribe Trends</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        header {
+            background: #004d40;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .hero {
+            background: url('header-image.jpg') no-repeat center/cover;
+            color: white;
+            height: 30px;
+            text-align: center;
+            padding: 50px 0;
+            font-size: 2em;
+        }
+        .about-content {
+            display: flex;
+            padding: 40px;
+            gap: 20px;
+        }
+        .about-content img {
+            width: 200px;
+            border-radius: 10px;
+        }
+        .text-content {
+            max-width: 600px;
+        }
+
+       
+
+.text-content {
+    background-color: #00796b; /* Green background */
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.text-content h2 {
+    background-color: #004d40; /* Darker green for the heading */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+button {
+    background-color: white;
+    color: #00796b;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #004d40;
+    color: white;
+}
+
+
+        .mission-vision {
+            display: flex;
+            justify-content: space-around;
+            padding: 30px;
+            background: #e0f2f1;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #004d40;
+            color: white;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const button = document.querySelector("button");
+            button.addEventListener("click", function() {
+                alert("Learn more about Tribe Trends coming soon!");
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Tribe Trends</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Best Seller</a></li>
+                <li><a href="#">New Release</a></li>
+                <li><a href="#">Sale</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">More</a></li>
+            </ul>
+            <div class="search-bar"><input type="text" placeholder="Search..."></div>
+            <div class="profile-icon">🔔</div>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <h1>About Us</h1>
+    </section>
+    
+    <section class="about-content">
+        <div class="images">
+            <img src="img5.jpg" alt="Black T-shirt">
+            <img src="img4.jpg" alt="Beige T-shirt">
+        </div>
+        <div class="text-content">
+            <h2>About TRIBE TRENDS</h2>
+            <p>Providing the fashion you need with ease.</p>
+            <ul>
+                <li>Secure Shopping</li>
+                <li>Fast Delivery</li>
+                <li>Vault Payment</li>
+            </ul>
+            <button>Learn More</button>
+            
+        </div>
+    </section>
+    
+    <section class="mission-vision">
+        <div class="mission">
+            <h3>Our Mission</h3>
+            <p>Our mission is to create high-quality, stylish, and meaningful T-shirts...</p>
+        </div>
+        <div class="vision">
+            <h3>Our Vision</h3>
+            <p>To be a globally recognized fashion brand...</p>
+        </div>
+        <div class="history">
+            <h3>Our History</h3>
+            <p>Tribe Marketing in the digital age...</p>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2022 Brand, Inc. | Privacy | Terms | Sitemap</p>
+        <div class="social-icons">
+            <a href="#">🔵</a>
+            <a href="#">🔗</a>
+            <a href="#">▶️</a>
+        </div>
+    </footer>
+</body>
+</html>
